@@ -2,7 +2,7 @@
 
 ## Contact
 
-### Mail 
+### E-Mail 
 alexander.kiosk@gmail.com
 
 ### Telegram
@@ -20,13 +20,13 @@ My strengths are that I am willing to accept my mistakes and work on them.
 
 I have no work experience, but I am always ready to learn about new things.
 
-### Skills
+## Skills
 1. C++
 2. Python 
 3. Django
 4. Git
 
-### Code Example
+## Code Example
 #### C++
 ```C++
 #include <vector>
@@ -72,3 +72,23 @@ async def stop(message: types.Message, state: FSMContext):
 ```
 ### Experience
 I created a [TODO-bot](https://github.com/castaval/telegram-todo-bot.git) on Python 
+
+## Education
+### School and University
+2010-2021  
+School №49
+
+2021-...  
+Bachelor  
+Ivanovo State University of Chemistry and Technology
+
+### Courses
+- [Python and Django Full Stack Web Developer Bootcamp](https://www.udemy.com/course/rest-api-flask-and-python/) (in progress)
+- [REST APIs with Flask and Python](https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/) (in progress)
+- [RS School. Course JavaScript/Front-end. Stage 1](https://github.com/rolling-scopes-school/tasks/tree/master/stage1) (in progress)
+
+## Languages:
+- English - Pre-Intermediate (studied at [William Reilly](https://ivanovo.wr-school.ru/))
+- Russian - Native
+
+
