@@ -4,61 +4,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
     <title>CV</title>
 </head>
 <body>
     
     <main>
-        <h1>Alexander Butusov</h1>
-
-        <section>
-            <h2>Contact</h2>
-
-            <h3>E-Mail</h3>
-            <p>alexander.kiosk@gmail.com</p>
-
-            <h3>Telegram</h3>
-            <p>@Algrimbut</p>
-
-            <h3>Discord</h3>
-            <p>Kiosk#2370</p>
-        </section>
-
-        <section>
-            <h2>About Me</h2>
+        <div class="container-main">
             
-            <p>
-                My goal is to become a developer who can work both Front-End and Back-End. 
-            </p>
-            <p>
-                My priorities are self-development and self-realization.
-            </p>
-            <p> 
-                My strengths are that I am willing to accept my mistakes and work on them.
-            </p>
-            <p>
-                I have no work experience, but I am always ready to learn about new things. 
-            </p>
-        </section>
+                <div class="presentation-img">
+                    <img src="./img/avatar.jpg" alt="my_avatar" width="300">
+                </div>
 
-        <section>
-            <h2>Skills</h2>
-
-            <ol>
-                <li>C++</li>
-                <li>Python</li>
-                <li>Django</li>
-                <li>Git</li>
-            </ol>
-        </section>
-
-        <section>
-            <h2>Code Example</h2>
-
-            <h4>C++</h4>
+                <section class="presentation-text">
+                    <h1>Alexander Butusov</h1>
+                    <h2>Frontend Developer (In Future)</h2>
+                </section>
             
-            <pre>
-                <code>
+            <section class="contact">
+                <h2>Contact</h2>
+
+                <h3>E-Mail</h3>
+                <p><a href="mailto:alexander.kiosk@gmail.com">alexander.kiosk@gmail.com</a></p>
+
+                <h3>Telegram</h3>
+                <p><a href="https://t.me/Algrimbut">@Algrimbut</a></p>
+
+                <h3>Discord</h3>
+                <p>Kiosk#2370</p>
+            </section>
+
+            <section class="about-me">
+                <h2>About Me</h2>
+                
+                <p>
+                    My goal is to become a developer who can work both Front-End and Back-End. <br>
+                    My priorities are self-development and self-realization. <br>
+                    My strengths are that I am willing to accept my mistakes and work on them. <br>
+                    I have no work experience, but I am always ready to learn about new things. 
+                </p>
+            </section>
+
+            <section>
+                <h2>Skills</h2>
+
+                <ol>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>Git</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>Experience</h2>
+
+                <p>I created a <a href="https://github.com/castaval/telegram-todo-bot.git">TODO-bot</a> on Python</p>
+            </section>
+
+            <section>
+                <h2>University</h2>
+                <p>
+                    2021-...<br>
+                    Bachelor<br>    
+                    Ivanovo State University of Chemistry and Technology
+                </p>
+                
+                <h2>Courses</h2>
+
+                <ul>
+                    <li>
+                        <a href="https://www.udemy.com/course/rest-api-flask-and-python/">Python and Django Full Stack Web Developer Bootcamp</a> (in progress)
+                    </li>
+                    <li>
+                        <a href="https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/">REST APIs with Flask and Python</a> (in progress)
+                    </li>
+                    <li>
+                        <a href="https://github.com/rolling-scopes-school/tasks/tree/master/stage1">RS School. Course JavaScript/Front-end. Stage 1</a> (in progress)
+                    </li>
+                    
+                </ul>
+            </section>
+
+            <section>
+                <h2>Languages:</h2>
+                <ul>
+                    <li>English - Pre-Intermediate (studied at <a href="https://ivanovo.wr-school.ru/">William Reilly</a>) </li>
+                    <li>Russian - Native</li>
+                </ul>
+            </section>
+
+            <section class="code-example">
+                <h2>Code Example</h2>
+
+                
+                <h3>C++</h3>
+                
+                <pre>
+                    <code>
 #include &lt;vector&gt
 
 std::vector&lt;int&gt countPositivesSumNegatives(std::vector&lt;int&gt input)
@@ -80,13 +124,13 @@ std::vector&lt;int&gt countPositivesSumNegatives(std::vector&lt;int&gt input)
         return {};
     }
 } 
-                </code>
-            </pre>
+                    </code>
+                </pre>
 
-            <h4>Python</h4>
-            
-            <pre>
-                <code>
+                <h3>Python</h3>
+                
+                <pre>
+                    <code>
 async def stop(message: types.Message, state: FSMContext):
     goals = await sqlite_db.sql_goals_read()
     if goals is None:
@@ -103,51 +147,10 @@ async def stop(message: types.Message, state: FSMContext):
 {}""".format(list(data.values())[0], '\n'.join(all_goals))
         await bot.send_message(message.from_user.id, message_goal, reply_markup=get_inline_keyboard())
     await InlineFSM.new_goal.set()            
-                </code>
-            </pre>
-        </section>
-
-        <section>
-            <h2>Experience</h2>
-
-            <p>I created a <a href="https://github.com/castaval/telegram-todo-bot.git">TODO-bot</a> on Python</p>
-        </section>
-
-        <section>
-            <h3>School and University</h3>
-            <p>
-                2010-2021<br>
-                School №49
-            </p>
-            <p>
-                2021-...<br>
-                Bachelor<br>
-                Ivanovo State University of Chemistry and Technology
-            </p>
-            
-            <h3>Courses</h3>
-
-            <ul>
-                <li>
-                    <a href="https://www.udemy.com/course/rest-api-flask-and-python/">Python and Django Full Stack Web Developer Bootcamp</a> (in progress)
-                </li>
-                <li>
-                    <a href="https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/">REST APIs with Flask and Python</a> (in progress)
-                </li>
-                <li>
-                    <a href="https://github.com/rolling-scopes-school/tasks/tree/master/stage1">RS School. Course JavaScript/Front-end. Stage 1</a> (in progress)
-                </li>
-                
-            </ul>
-        </section>
-
-        <section>
-            <h2>Languages:</h2>
-            <ul>
-                <li>English - Pre-Intermediate (studied at <a href="https://ivanovo.wr-school.ru/">William Reilly</a>) </li>
-                <li>Russian - Native</li>
-            </ul>
-        </section>
+                    </code>
+                </pre>
+            </section>
+        </div> 
     </main>
 
 </body>
